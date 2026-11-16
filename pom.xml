@@ -19,8 +19,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <!-- Versions aligned with what Serenity 5.4.2 is built against -->
-        <serenity.version>5.4.2</serenity.version>
         <cucumber.version>8.0.4</cucumber.version>
         <junit.version>6.1.3</junit.version>
         <rest-assured.version>6.3.0</rest-assured.version>
@@ -33,13 +31,6 @@
 
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>net.serenity-bdd</groupId>
-                <artifactId>serenity-bom</artifactId>
-                <version>${serenity.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
             <dependency>
                 <groupId>org.junit</groupId>
                 <artifactId>junit-bom</artifactId>
@@ -86,11 +77,6 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>${maven-surefire-plugin.version}</version>
-                </plugin>
-                <plugin>
-                    <groupId>net.serenity-bdd.maven.plugins</groupId>
-                    <artifactId>serenity-maven-plugin</artifactId>
-                    <version>${serenity.version}</version>
                 </plugin>
             </plugins>
         </pluginManagement>
