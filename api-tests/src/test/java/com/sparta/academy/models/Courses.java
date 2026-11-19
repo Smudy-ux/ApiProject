@@ -3,7 +3,7 @@ package com.sparta.academy.models;
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class Course {
+public class Courses {
 
 	@JsonProperty("Course")
 	private List<CourseItem> course;
